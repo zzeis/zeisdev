@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moisés Monteiro - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -41,7 +48,7 @@
           <!-- Header -->
           <div class="mb-6">
             <h1 class="text-lg font-semibold text-text-primary mb-1">
-              Portfolio
+              Portfólio
             </h1>
             <p class="text-text-secondary text-sm">zéisdev</p>
           </div>
@@ -125,101 +132,78 @@
 
       <!-- Main Content -->
       <div class="flex-1 overflow-y-auto bg-white lg:ml-0">
-        <div class="p-4 lg:p-8 flex justify-center items-start min-h-full">
-          <!-- Character Card -->
+        <div class="p-4 lg:p-8 flex justify-center items-center min-h-full">
+          <!-- Tarot Style Card -->
           <div id="about-section" class="content-section">
-            <div class="card">
-              <!-- Card Header -->
-              <div
-                class="card-header bg-gradient-to-r from-card-border to-yellow-600 p-2.5 rounded-t-lg"
-              >
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-2">
-                    <i class="ri-star-fill text-yellow-400 text-xs"></i>
-                    <span class="text-gray-500 font-semibold text-xs"
-                      >DESENVOLVEDOR</span
-                    >
-                  </div>
-                  <div class="bg-gray-100 rounded-full px-2 py-0.5">
-                    <span class="text-gray-500 text-xs font-semibold"
-                      >LV.25</span
-                    >
-                  </div>
-                </div>
-              </div>
+            <div class="tarot-card">
+              <!-- Card Background -->
+              <div class="card-background">
+                <!-- Decorative Border -->
+                <div class="decorative-border">
+                  <!-- Corner Ornaments -->
+                  <div class="corner-ornament top-left"></div>
+                  <div class="corner-ornament top-right"></div>
+                  <div class="corner-ornament bottom-left"></div>
+                  <div class="corner-ornament bottom-right"></div>
 
-              <!-- Card Content -->
-              <div class="card-content p-4 flex flex-col">
-                <!-- Avatar -->
-                <div class="flex justify-center mb-3">
-                  <div
-                    class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-0.5"
-                  >
-                    <div
-                      class="w-full h-full rounded-full bg-gray-100 flex items-center justify-center"
-                    >
-                      <i class="ri-user-line text-lg text-gray-600"></i>
+                  <!-- Side Numbers -->
+
+                  <!-- Title -->
+                  <div class="card-title">
+                    <h1>Moisés Monteiro</h1>
+                  </div>
+
+                  <!-- Inner Frame -->
+                  <div class="inner-frame">
+                    <!-- Portrait Area -->
+                    <div class="portrait-section">
+                      <!-- Background Circle -->
+                      <div class="background-circle"></div>
+
+                      <!-- Character Illustration -->
+                      <div class="character-illustration">
+                        <div class="avatar-container">
+                          <i class="ri-user-line"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Symbols Row -->
+                    <div class="symbols-row">
+                      <div class="symbol-circle">
+                        <i class="devicon-laravel-original"></i>
+                      </div>
+                      <div class="symbol-circle">
+                        <i class="ri-reactjs-line"></i>
+                      </div>
+                      <div class="symbol-circle">
+                        <i class="ri-nodejs-line"></i>
+                      </div>
+                      <div class="symbol-circle">
+                        <i class="devicon-docker-plain"></i>
+                      </div>
+                      <div class="symbol-circle">
+                        <i class="devicon-git-plain"></i>
+                      </div>
+                    </div>
+
+                    <!-- Description Text -->
+                    <div class="description-section">
+                      <p class="main-description">
+                        O Desenvolvedor Fullstack domina tanto frontend quanto
+                        backend.
+                      </p>
+                      <div class="ability-text">
+                        <p>1-3 Cria interfaces responsivas.</p>
+                        <p>3-6 "APIs RESTful" estão em suas mãos.</p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <!-- Name & Title -->
-                <div class="text-center mb-3">
-                  <h2 class="text-base font-bold text-text-primary mb-0.5">
-                    Moisés Monteiro
-                  </h2>
-                  <p class="text-card-border font-semibold text-xs">
-                    Fullstack Developer
-                  </p>
-                </div>
-
-                <!-- Skills -->
-                <div class="mb-3">
-                  <h3
-                    class="text-xs font-semibold text-text-secondary mb-2 text-center uppercase tracking-wide"
-                  >
-                    Habilidades
-                  </h3>
-                  <div class="flex flex-wrap gap-1 justify-center">
-                    <span class="skill-tag php">PHP</span>
-                    <span class="skill-tag js">JS</span>
-                    <span class="skill-tag laravel">Laravel</span>
-                    <span class="skill-tag react">React</span>
-                    <span class="skill-tag mysql">MySQL</span>
-                  </div>
-                </div>
-
-                <!-- Divider -->
-                <div class="flex items-center justify-center mb-3">
-                  <div class="flex-1 h-px bg-gray-200"></div>
-
-                  <div class="flex-1 h-px bg-gray-200"></div>
-                </div>
-
-                <!-- Description -->
-                <div class="mb-3 flex-1">
-                  <p
-                    class="text-text-secondary text-xs text-center leading-relaxed"
-                  >
-                    Desenvolvedor apaixonado por criar soluções inovadoras.
-                    Especialista em desenvolvimento fullstack com foco em
-                    performance e UX.
-                  </p>
-                </div>
-
-                <!-- Stats -->
-                <div class="grid grid-cols-3 gap-1.5">
-                  <div class="text-center bg-gray-50 rounded-lg p-1.5">
-                    <div class="text-xs font-bold text-blue-600">20+</div>
-                    <div class="text-xs text-text-secondary">Projetos</div>
-                  </div>
-                  <div class="text-center bg-gray-50 rounded-lg p-1.5">
-                    <div class="text-xs font-bold text-green-600">4+</div>
-                    <div class="text-xs text-text-secondary">Anos</div>
-                  </div>
-                  <div class="text-center bg-gray-50 rounded-lg p-1.5">
-                    <div class="text-xs font-bold text-purple-600">∞</div>
-                    <div class="text-xs text-text-secondary">example</div>
+                  <!-- Footer -->
+                  <div class="card-footer">
+                    <span class="footer-left">Desenvolvedor</span>
+                    <span class="footer-right">zzeis © 2025</span>
                   </div>
                 </div>
               </div>

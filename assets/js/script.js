@@ -61,3 +61,12 @@ document.querySelector("form")?.addEventListener("submit", (e) => {
   e.preventDefault()
   alert("Mensagem enviada! (Demo)")
 })
+
+// Card hover effect
+document.querySelector(".tarot-card")?.addEventListener("mouseenter", function () {
+  this.style.transform = "perspective(1000px) rotateY(3deg) rotateX(-1deg)"
+})
+
+document.querySelector(".tarot-card")?.addEventListener("mouseleave", function () {
+  this.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg)"
+})
