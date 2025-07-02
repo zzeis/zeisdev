@@ -62,11 +62,26 @@ document.querySelector("form")?.addEventListener("submit", (e) => {
   alert("Mensagem enviada! (Demo)")
 })
 
-// Card hover effect
+// Card hover effects
+document.querySelectorAll(".project-card").forEach((card) => {
+  card.addEventListener("mouseenter", function () {
+    const cardBg = this.querySelector(".card-background")
+    cardBg.style.transform = "perspective(1000px) rotateY(3deg) rotateX(-1deg) scale(1.02)"
+  })
+
+  card.addEventListener("mouseleave", function () {
+    const cardBg = this.querySelector(".card-background")
+    cardBg.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)"
+  })
+})
+
+// Main card hover effect
 document.querySelector(".tarot-card")?.addEventListener("mouseenter", function () {
-  this.style.transform = "perspective(1000px) rotateY(3deg) rotateX(-1deg)"
+  const cardBg = this.querySelector(".card-background")
+  cardBg.style.transform = "perspective(1000px) rotateY(3deg) rotateX(-1deg)"
 })
 
 document.querySelector(".tarot-card")?.addEventListener("mouseleave", function () {
-  this.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg)"
+  const cardBg = this.querySelector(".card-background")
+  cardBg.style.transform = "perspective(1000px) rotateY(0deg) rotateX(0deg)"
 })
